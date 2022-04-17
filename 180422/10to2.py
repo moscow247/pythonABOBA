@@ -4,5 +4,7 @@ while True:
     while a>0:
         b+=str(a%2)
         a//=2
-    b=b[::-1]
-    print(b)
+    z=""
+    for i in range(len(b)):
+        z+=b[(len(b)-1)-i]
+    print(z)
